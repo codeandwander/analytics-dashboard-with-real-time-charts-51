@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="branding">
+        <img src="logo.png" alt="Company Logo">
+        <h1>Analytics Dashboard</h1>
+      </div>
+      <div class="user-profile">
+        <button class="profile-btn">
+          <img src="user-avatar.png" alt="User Avatar">
+          <span>John Doe</span>
+          <i class="dropdown-icon"></i>
+        </button>
+        <div class="dropdown-menu">
+          <a href="#">Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+      <div class="dark-mode-toggle">
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-checkbox">
+          <span class="slider round"></span>
+        </label>
+        <span>Dark Mode</span>
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#" class="active"><i class="icon-overview"></i>Overview</a></li>
+        <li><a href="#"><i class="icon-sales"></i>Sales</a></li>
+        <li><a href="#"><i class="icon-users"></i>Users</a></li>
+        <li><a href="#"><i class="icon-reports"></i>Reports</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="kpi-cards">
+        <div class="kpi-card">
+          <h3>Total Revenue</h3>
+          <p class="value">$350,000</p>
+          <p class="trend">
+            <i class="icon-up"></i>
+            <span>12.5%</span>
+          </p>
+        </div>
+        <div class="kpi-card">
+          <h3>Active Users</h3>
+          <p class="value">12,345</p>
+          <p class="trend">
+            <i class="icon-up"></i>
+            <span>5.2%</span>
+          </p>
+        </div>
+        <div class="kpi-card">
+          <h3>Conversion Rate</h3>
+          <p class="value">8.4%</p>
+          <p class="trend">
+            <i class="icon-down"></i>
+            <span>1.2%</span>
+          </p>
+        </div>
+        <div class="kpi-card">
+          <h3>Growth</h3>
+          <p class="value">17.8%</p>
+          <p class="trend">
+            <i class="icon-up"></i>
+            <span>3.6%</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="charts-container">
+        <div class="chart-wrapper">
+          <h2>Revenue Trends</h2>
+          <canvas id="revenueChart"></canvas>
+        </div>
+        <div class="chart-wrapper">
+          <h2>Product Sales</h2>
+          <canvas id="productSalesChart"></canvas>
+        </div>
+      </div>
+
+      <div class="activity-feed">
+        <h2>Recent Activity</h2>
+        <div class="activity-item">
+          <div class="avatar">
+            <img src="user
